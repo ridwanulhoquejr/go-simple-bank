@@ -15,9 +15,6 @@ dropdb:
 psqlshell:
 	docker exec -it postgres12 psql -U root simple_bank
 
-# quit from psql shell
-quitpsql:
-	\q
 
 # up migrations
 migrateup:
