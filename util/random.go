@@ -27,3 +27,17 @@ func RandomString(n int) string {
 	}
 	return sb.String()
 }
+
+func RandomOwner() string {
+	return RandomString(6)
+}
+
+func RandomCurrency() string {
+	currencies := []string{"USD", "EUR", "TK"}
+	n := len(currencies)
+	return currencies[rand.Intn(n)]
+}
+
+func RandomBalance() int64 {
+	return RandomInt(0, 1000)
+}

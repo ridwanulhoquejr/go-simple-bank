@@ -28,5 +28,9 @@ migratedown:
 sqlc:
 	sqlc generate
 
+# run test
+test:
+	go test -v -cover ./...
 
-.PHONY: postgres createdb dropdb psqlshell migrateup sqlc
+
+.PHONY: postgres createdb dropdb psqlshell migrateup sqlc test
